@@ -66,6 +66,7 @@ floyd(H)
 print("\n")
 
 end_time=datetime.datetime.now() #end time stamp one algorith has completed running 
+print("Algorithm runtime is:",end= "")
 print (end_time-start_time)  # print algorithm runtime 
 
 # The matrix below is the known correct output from (Shivali Bhadaniya, 2022)
