@@ -22,10 +22,11 @@ def floyd(*args):
     4 x 4 matrix list of integers with the shortes distance between nodes    
     """
     dist = list(map(lambda p: list(map(lambda q: q, p)), H))
-
+    
     # Adding vertices individually using recursion 
-    for r in range(nv):
-        for p in range(nv):
+    #p and q and invoked and are used as varaibles indecies for colm and row respectivly 
+    for r in range(nv): 
+        for p in range(nv): 
             for q in range(nv):
                 dist[p][q] = min(dist[p][q], dist[p][r] + dist[r][q])
     sol(dist)
